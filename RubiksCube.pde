@@ -1,10 +1,6 @@
-// For dimensions up to 10x10x10 use the keys "qwertyuiop" to turn the corresponding face in the
-//   x plane, "asdfghjkl;" in the y plane, and "zxcvbnm,./" in the z plane (smaller dimensions use
-//   keys farthest to the left, e.g. 3x3x3 only uses "qwe", "asd", and "zxc").
-// Hold shift to turn a face in the opposite direction.
-// The ENTER key toggles between animated mode and non-animated mode.
-// The "\" key scrambles the cube with a string of random moves.
-// The SPACE bar solves the cube.
+
+import peasy.*;
+
 
 // You can customize the settings here:
 int dim = 3; //Change the dimension
@@ -14,8 +10,6 @@ float smaller = 0.8; //Change size of squares
 int lengthrand = 40; //Change length of random scramble
 boolean colorsInside = true; //Toggle between grey inside and colored inside
 
-
-import peasy.*;
 
 PeasyCam cam;
 float angle = 0;
